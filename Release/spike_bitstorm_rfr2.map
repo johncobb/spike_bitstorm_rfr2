@@ -1,0 +1,1251 @@
+Archive member included because of file (symbol)
+
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+                              ./stack/hal/drivers/atmega256rfr2/halSleep.o (__udivmodsi4)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o (exit)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+                              ./stack/nwk/src/nwk.o (__do_copy_data)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+                              ./stack/sys/src/sysTimer.o (__do_clear_bss)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+                              ./stack/sys/src/sysTimer.o (__umulhisi3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+                              ./stack/apps/BitStorm_LM/BaseNode.o (__ashldi3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+                              ./stack/apps/BitStorm_LM/Router.o (__cmpdi2)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o)
+                              ./stack/nwk/src/nwkTx.o (rand)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(memcpy.o)
+                              ./stack/nwk/src/nwkDataReq.o (memcpy)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o) (__divmodsi4)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o) (__negsi2)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o) (__muluhisi3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o) (__mulohisi3)
+
+Allocating common symbols
+Common symbol       size              file
+
+router_id_list      0x320             ./stack/apps/BitStorm_LM/Router.o
+at_buffer           0x101             ./stack/apps/BitStorm_LM/at.o
+nwkIb               0x28              ./stack/nwk/src/nwk.o
+appDataSendingTimer
+                    0xd               ./stack/apps/BitStorm_LM/BaseNode.o
+routerAgingTimer    0xd               ./stack/apps/BitStorm_LM/BaseNode.o
+cobs_buffer         0x2d              ./stack/apps/BitStorm_LM/Coordinator.o
+AppConfig           0x17              ./stack/apps/BitStorm_LM/main.o
+nwkDataReq          0x11              ./stack/apps/BitStorm_LM/BaseNode.o
+appMsg              0x25              ./stack/apps/BitStorm_LM/BaseNode.o
+halTimerIrqCount    0x1               ./stack/hal/atmega256rfr2/src/halTimer.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00100000         xr
+data             0x00800200         0x0000fe00         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800200
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o
+LOAD ./stack/sys/src/sys.o
+LOAD ./stack/sys/src/sysEncrypt.o
+LOAD ./stack/sys/src/sysTimer.o
+LOAD ./stack/phy/atmegarfr2/src/phy.o
+LOAD ./stack/phy/atmega256rfr2/src/phy.o
+LOAD ./stack/nwk/src/nwk.o
+LOAD ./stack/nwk/src/nwkDataReq.o
+LOAD ./stack/nwk/src/nwkFrame.o
+LOAD ./stack/nwk/src/nwkGroup.o
+LOAD ./stack/nwk/src/nwkRoute.o
+LOAD ./stack/nwk/src/nwkRouteDiscovery.o
+LOAD ./stack/nwk/src/nwkRx.o
+LOAD ./stack/nwk/src/nwkSecurity.o
+LOAD ./stack/nwk/src/nwkTx.o
+LOAD ./stack/hal/drivers/atmega256rfr2/halSleep.o
+LOAD ./stack/hal/drivers/atmega256rfr2/halUart.o
+LOAD ./stack/hal/atmega256rfr2/src/hal.o
+LOAD ./stack/hal/atmega256rfr2/src/halTimer.o
+LOAD ./stack/apps/BitStorm_LM/BaseNode.o
+LOAD ./stack/apps/BitStorm_LM/Coordinator.o
+LOAD ./stack/apps/BitStorm_LM/EndDevice.o
+LOAD ./stack/apps/BitStorm_LM/Router.o
+LOAD ./stack/apps/BitStorm_LM/Sensor_ADC.o
+LOAD ./stack/apps/BitStorm_LM/at.o
+LOAD ./stack/apps/BitStorm_LM/eeprom.o
+LOAD ./stack/apps/BitStorm_LM/main.o
+START GROUP
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libm.a
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2f7e
+ *(.vectors)
+ .vectors       0x00000000      0x134 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000134                . = ALIGN (0x2)
+                0x00000134                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000134       0x5c linker stubs
+ *(.trampolines*)
+                0x00000190                __trampolines_end = .
+ *(.progmem*)
+                0x00000190                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000190                __ctors_start = .
+ *(.ctors)
+                0x00000190                __ctors_end = .
+                0x00000190                __dtors_start = .
+ *(.dtors)
+                0x00000190                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000190        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o
+                0x00000190                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000190       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o
+ *(.init2)
+ *(.init3)
+ .init3         0x000001a0       0x12 ./stack/apps/BitStorm_LM/at.o
+                0x000001a0                wdt_init
+ *(.init3)
+ *(.init4)
+ .init4         0x000001b2       0x1a /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+                0x000001b2                __do_copy_data
+ .init4         0x000001cc       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+                0x000001cc                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000001dc        0x8 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o
+ *(.init9)
+ *(.text)
+ .text          0x000001e4        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o
+                0x000001e4                __vector_65
+                0x000001e4                __vector_22
+                0x000001e4                __vector_63
+                0x000001e4                __vector_28
+                0x000001e4                __vector_67
+                0x000001e4                __vector_1
+                0x000001e4                __vector_32
+                0x000001e4                __vector_75
+                0x000001e4                __vector_71
+                0x000001e4                __vector_34
+                0x000001e4                __vector_62
+                0x000001e4                __vector_24
+                0x000001e4                __vector_12
+                0x000001e4                __vector_55
+                0x000001e4                __vector_69
+                0x000001e4                __vector_46
+                0x000001e4                __bad_interrupt
+                0x000001e4                __vector_72
+                0x000001e4                __vector_6
+                0x000001e4                __vector_31
+                0x000001e4                __vector_35
+                0x000001e4                __vector_74
+                0x000001e4                __vector_39
+                0x000001e4                __vector_3
+                0x000001e4                __vector_23
+                0x000001e4                __vector_68
+                0x000001e4                __vector_30
+                0x000001e4                __vector_73
+                0x000001e4                __vector_45
+                0x000001e4                __vector_25
+                0x000001e4                __vector_61
+                0x000001e4                __vector_11
+                0x000001e4                __vector_54
+                0x000001e4                __vector_17
+                0x000001e4                __vector_19
+                0x000001e4                __vector_56
+                0x000001e4                __vector_7
+                0x000001e4                __vector_49
+                0x000001e4                __vector_41
+                0x000001e4                __vector_64
+                0x000001e4                __vector_43
+                0x000001e4                __vector_27
+                0x000001e4                __vector_5
+                0x000001e4                __vector_33
+                0x000001e4                __vector_76
+                0x000001e4                __vector_47
+                0x000001e4                __vector_52
+                0x000001e4                __vector_4
+                0x000001e4                __vector_44
+                0x000001e4                __vector_51
+                0x000001e4                __vector_9
+                0x000001e4                __vector_2
+                0x000001e4                __vector_21
+                0x000001e4                __vector_15
+                0x000001e4                __vector_66
+                0x000001e4                __vector_58
+                0x000001e4                __vector_70
+                0x000001e4                __vector_29
+                0x000001e4                __vector_60
+                0x000001e4                __vector_40
+                0x000001e4                __vector_8
+                0x000001e4                __vector_26
+                0x000001e4                __vector_48
+                0x000001e4                __vector_14
+                0x000001e4                __vector_57
+                0x000001e4                __vector_53
+                0x000001e4                __vector_10
+                0x000001e4                __vector_50
+                0x000001e4                __vector_16
+                0x000001e4                __vector_59
+                0x000001e4                __vector_18
+                0x000001e4                __vector_20
+                0x000001e4                __vector_38
+ .text          0x000001e8        0x0 ./stack/sys/src/sys.o
+ .text          0x000001e8        0x0 ./stack/sys/src/sysEncrypt.o
+ .text          0x000001e8        0x0 ./stack/sys/src/sysTimer.o
+ .text          0x000001e8        0x0 ./stack/phy/atmegarfr2/src/phy.o
+ .text          0x000001e8        0x0 ./stack/phy/atmega256rfr2/src/phy.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwk.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwkDataReq.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwkFrame.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwkGroup.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwkRoute.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwkRouteDiscovery.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwkRx.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwkSecurity.o
+ .text          0x000001e8        0x0 ./stack/nwk/src/nwkTx.o
+ .text          0x000001e8        0x0 ./stack/hal/drivers/atmega256rfr2/halSleep.o
+ .text          0x000001e8        0x0 ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .text          0x000001e8        0x0 ./stack/hal/atmega256rfr2/src/hal.o
+ .text          0x000001e8        0x0 ./stack/hal/atmega256rfr2/src/halTimer.o
+ .text          0x000001e8        0x0 ./stack/apps/BitStorm_LM/BaseNode.o
+ .text          0x000001e8        0x0 ./stack/apps/BitStorm_LM/Coordinator.o
+ .text          0x000001e8        0x0 ./stack/apps/BitStorm_LM/EndDevice.o
+ .text          0x000001e8        0x0 ./stack/apps/BitStorm_LM/Router.o
+ .text          0x000001e8        0x0 ./stack/apps/BitStorm_LM/Sensor_ADC.o
+ .text          0x000001e8        0x0 ./stack/apps/BitStorm_LM/at.o
+ .text          0x000001e8        0x0 ./stack/apps/BitStorm_LM/eeprom.o
+ .text          0x000001e8        0x0 ./stack/apps/BitStorm_LM/main.o
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(memcpy.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .text          0x000001e8        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+                0x000001e8                . = ALIGN (0x2)
+ *(.text.*)
+ .text.SYS_Init
+                0x000001e8       0x10 ./stack/sys/src/sys.o
+                0x000001e8                SYS_Init
+ .text.SYS_TaskHandler
+                0x000001f8        0xc ./stack/sys/src/sys.o
+                0x000001f8                SYS_TaskHandler
+ .text.placeTimer
+                0x00000204       0xb8 ./stack/sys/src/sysTimer.o
+ .text.SYS_TimerInit
+                0x000002bc        0xa ./stack/sys/src/sysTimer.o
+                0x000002bc                SYS_TimerInit
+ .text.SYS_TimerStop
+                0x000002c6       0x6e ./stack/sys/src/sysTimer.o
+                0x000002c6                SYS_TimerStop
+ .text.SYS_TimerStarted
+                0x00000334       0x22 ./stack/sys/src/sysTimer.o
+                0x00000334                SYS_TimerStarted
+ .text.SYS_TimerStart
+                0x00000356       0x1e ./stack/sys/src/sysTimer.o
+                0x00000356                SYS_TimerStart
+ .text.SYS_TimerTaskHandler
+                0x00000374       0x96 ./stack/sys/src/sysTimer.o
+                0x00000374                SYS_TimerTaskHandler
+ .text.phySetChannel
+                0x0000040a       0x36 ./stack/phy/atmegarfr2/src/phy.o
+ .text.phyTrxSetState
+                0x00000440       0x20 ./stack/phy/atmegarfr2/src/phy.o
+ .text.phySetRxState
+                0x00000460       0x1c ./stack/phy/atmegarfr2/src/phy.o
+ .text.PHY_SetRxState
+                0x0000047c        0x8 ./stack/phy/atmegarfr2/src/phy.o
+                0x0000047c                PHY_SetRxState
+ .text.PHY_SetChannel
+                0x00000484        0x8 ./stack/phy/atmegarfr2/src/phy.o
+                0x00000484                PHY_SetChannel
+ .text.PHY_SetBand
+                0x0000048c        0x8 ./stack/phy/atmegarfr2/src/phy.o
+                0x0000048c                PHY_SetBand
+ .text.PHY_SetPanId
+                0x00000494       0x24 ./stack/phy/atmegarfr2/src/phy.o
+                0x00000494                PHY_SetPanId
+ .text.PHY_SetShortAddr
+                0x000004b8       0x24 ./stack/phy/atmegarfr2/src/phy.o
+                0x000004b8                PHY_SetShortAddr
+ .text.PHY_SetTxPower
+                0x000004dc       0x10 ./stack/phy/atmegarfr2/src/phy.o
+                0x000004dc                PHY_SetTxPower
+ .text.PHY_Sleep
+                0x000004ec       0x18 ./stack/phy/atmegarfr2/src/phy.o
+                0x000004ec                PHY_Sleep
+ .text.PHY_Wakeup
+                0x00000504       0x16 ./stack/phy/atmegarfr2/src/phy.o
+                0x00000504                PHY_Wakeup
+ .text.PHY_DataReq
+                0x0000051a       0x5c ./stack/phy/atmegarfr2/src/phy.o
+                0x0000051a                PHY_DataReq
+ .text.PHY_RandomReq
+                0x00000576       0x60 ./stack/phy/atmegarfr2/src/phy.o
+                0x00000576                PHY_RandomReq
+ .text.PHY_Init
+                0x000005d6       0x38 ./stack/phy/atmegarfr2/src/phy.o
+                0x000005d6                PHY_Init
+ .text.PHY_TaskHandler
+                0x0000060e       0xf4 ./stack/phy/atmegarfr2/src/phy.o
+                0x0000060e                PHY_TaskHandler
+ .text.NWK_Init
+                0x00000702       0x3c ./stack/nwk/src/nwk.o
+                0x00000702                NWK_Init
+ .text.NWK_SetAddr
+                0x0000073e        0xc ./stack/nwk/src/nwk.o
+                0x0000073e                NWK_SetAddr
+ .text.NWK_SetPanId
+                0x0000074a        0xc ./stack/nwk/src/nwk.o
+                0x0000074a                NWK_SetPanId
+ .text.NWK_OpenEndpoint
+                0x00000756       0x12 ./stack/nwk/src/nwk.o
+                0x00000756                NWK_OpenEndpoint
+ .text.NWK_Busy
+                0x00000768       0x12 ./stack/nwk/src/nwk.o
+                0x00000768                NWK_Busy
+ .text.NWK_Lock
+                0x0000077a       0x10 ./stack/nwk/src/nwk.o
+                0x0000077a                NWK_Lock
+ .text.NWK_Unlock
+                0x0000078a       0x10 ./stack/nwk/src/nwk.o
+                0x0000078a                NWK_Unlock
+ .text.NWK_SleepReq
+                0x0000079a        0x4 ./stack/nwk/src/nwk.o
+                0x0000079a                NWK_SleepReq
+ .text.NWK_WakeupReq
+                0x0000079e        0x4 ./stack/nwk/src/nwk.o
+                0x0000079e                NWK_WakeupReq
+ .text.NWK_LinearizeLqi
+                0x000007a2       0x5a ./stack/nwk/src/nwk.o
+                0x000007a2                NWK_LinearizeLqi
+ .text.NWK_TaskHandler
+                0x000007fc        0xc ./stack/nwk/src/nwk.o
+                0x000007fc                NWK_TaskHandler
+ .text.nwkDataReqTxConf
+                0x00000808       0x38 ./stack/nwk/src/nwkDataReq.o
+ .text.nwkDataReqInit
+                0x00000840        0xa ./stack/nwk/src/nwkDataReq.o
+                0x00000840                nwkDataReqInit
+ .text.NWK_DataReq
+                0x0000084a       0x3c ./stack/nwk/src/nwkDataReq.o
+                0x0000084a                NWK_DataReq
+ .text.nwkDataReqTaskHandler
+                0x00000886      0x136 ./stack/nwk/src/nwkDataReq.o
+                0x00000886                nwkDataReqTaskHandler
+ .text.nwkFrameInit
+                0x000009bc       0x14 ./stack/nwk/src/nwkFrame.o
+                0x000009bc                nwkFrameInit
+ .text.nwkFrameAlloc
+                0x000009d0       0x62 ./stack/nwk/src/nwkFrame.o
+                0x000009d0                nwkFrameAlloc
+ .text.nwkFrameFree
+                0x00000a32       0x14 ./stack/nwk/src/nwkFrame.o
+                0x00000a32                nwkFrameFree
+ .text.nwkFrameNext
+                0x00000a46       0x2a ./stack/nwk/src/nwkFrame.o
+                0x00000a46                nwkFrameNext
+ .text.nwkFrameCommandInit
+                0x00000a70       0x24 ./stack/nwk/src/nwkFrame.o
+                0x00000a70                nwkFrameCommandInit
+ .text.nwkRouteInit
+                0x00000a94       0x38 ./stack/nwk/src/nwkRoute.o
+                0x00000a94                nwkRouteInit
+ .text.NWK_RouteFindEntry
+                0x00000acc       0x54 ./stack/nwk/src/nwkRoute.o
+                0x00000acc                NWK_RouteFindEntry
+ .text.NWK_RouteNewEntry
+                0x00000b20       0x42 ./stack/nwk/src/nwkRoute.o
+                0x00000b20                NWK_RouteNewEntry
+ .text.NWK_RouteFreeEntry
+                0x00000b62       0x14 ./stack/nwk/src/nwkRoute.o
+                0x00000b62                NWK_RouteFreeEntry
+ .text.NWK_RouteNextHop
+                0x00000b76       0x16 ./stack/nwk/src/nwkRoute.o
+                0x00000b76                NWK_RouteNextHop
+ .text.NWK_RouteTable
+                0x00000b8c        0x6 ./stack/nwk/src/nwkRoute.o
+                0x00000b8c                NWK_RouteTable
+ .text.nwkRouteUpdateEntry
+                0x00000b92       0x4c ./stack/nwk/src/nwkRoute.o
+                0x00000b92                nwkRouteUpdateEntry
+ .text.nwkRouteRemove
+                0x00000bde        0xe ./stack/nwk/src/nwkRoute.o
+                0x00000bde                nwkRouteRemove
+ .text.nwkRouteFrameReceived
+                0x00000bec       0xb8 ./stack/nwk/src/nwkRoute.o
+                0x00000bec                nwkRouteFrameReceived
+ .text.nwkRouteFrameSent
+                0x00000ca4       0x84 ./stack/nwk/src/nwkRoute.o
+                0x00000ca4                nwkRouteFrameSent
+ .text.nwkRoutePrepareTx
+                0x00000d28       0x2c ./stack/nwk/src/nwkRoute.o
+                0x00000d28                nwkRoutePrepareTx
+ .text.nwkRouteFrame
+                0x00000d54       0xb2 ./stack/nwk/src/nwkRoute.o
+                0x00000d54                nwkRouteFrame
+ .text.nwkRouteErrorReceived
+                0x00000e06       0x24 ./stack/nwk/src/nwkRoute.o
+                0x00000e06                nwkRouteErrorReceived
+ .text.nwkRxDuplicateRejectionTimerHandler
+                0x00000e2a       0x24 ./stack/nwk/src/nwkRx.o
+ .text.nwkRxServiceDataInd
+                0x00000e4e       0x2a ./stack/nwk/src/nwkRx.o
+ .text.nwkRxInit
+                0x00000e78       0x42 ./stack/nwk/src/nwkRx.o
+                0x00000e78                nwkRxInit
+ .text.PHY_DataInd
+                0x00000eba       0x56 ./stack/nwk/src/nwkRx.o
+                0x00000eba                PHY_DataInd
+ .text.NWK_SetAckControl
+                0x00000f10        0x6 ./stack/nwk/src/nwkRx.o
+                0x00000f10                NWK_SetAckControl
+ .text.nwkRxTaskHandler
+                0x00000f16      0x3f0 ./stack/nwk/src/nwkRx.o
+                0x00000f16                nwkRxTaskHandler
+ .text.nwkTxDelayTimerHandler
+                0x00001306       0x5e ./stack/nwk/src/nwkTx.o
+ .text.nwkTxAckWaitTimerHandler
+                0x00001364       0x6e ./stack/nwk/src/nwkTx.o
+ .text.nwkTxInit
+                0x000013d2       0x5a ./stack/nwk/src/nwkTx.o
+                0x000013d2                nwkTxInit
+ .text.nwkTxFrame
+                0x0000142c       0x9c ./stack/nwk/src/nwkTx.o
+                0x0000142c                nwkTxFrame
+ .text.nwkTxBroadcastFrame
+                0x000014c8       0x90 ./stack/nwk/src/nwkTx.o
+                0x000014c8                nwkTxBroadcastFrame
+ .text.nwkTxAckReceived
+                0x00001558       0x44 ./stack/nwk/src/nwkTx.o
+                0x00001558                nwkTxAckReceived
+ .text.nwkTxConfirm
+                0x0000159c        0xe ./stack/nwk/src/nwkTx.o
+                0x0000159c                nwkTxConfirm
+ .text.PHY_DataConf
+                0x000015aa       0x42 ./stack/nwk/src/nwkTx.o
+                0x000015aa                PHY_DataConf
+ .text.nwkTxTaskHandler
+                0x000015ec      0x114 ./stack/nwk/src/nwkTx.o
+                0x000015ec                nwkTxTaskHandler
+ .text.halSleepSynchronize
+                0x00001700        0xa ./stack/hal/drivers/atmega256rfr2/halSleep.o
+ .text.HAL_Sleep
+                0x0000170a       0xe0 ./stack/hal/drivers/atmega256rfr2/halSleep.o
+                0x0000170a                HAL_Sleep
+ .text.__vector_13
+                0x000017ea       0x1e ./stack/hal/drivers/atmega256rfr2/halSleep.o
+                0x000017ea                __vector_13
+ .text.HAL_UartInit
+                0x00001808       0xb2 ./stack/hal/drivers/atmega256rfr2/halUart.o
+                0x00001808                HAL_UartInit
+ .text.HAL_UartWriteByte
+                0x000018ba       0x56 ./stack/hal/drivers/atmega256rfr2/halUart.o
+                0x000018ba                HAL_UartWriteByte
+ .text.HAL_UartReadByte
+                0x00001910       0x5e ./stack/hal/drivers/atmega256rfr2/halUart.o
+                0x00001910                HAL_UartReadByte
+ .text.__vector_37
+                0x0000196e       0x38 ./stack/hal/drivers/atmega256rfr2/halUart.o
+                0x0000196e                __vector_37
+ .text.__vector_36
+                0x000019a6       0xb4 ./stack/hal/drivers/atmega256rfr2/halUart.o
+                0x000019a6                __vector_36
+ .text.HAL_UartTaskHandler
+                0x00001a5a       0x8e ./stack/hal/drivers/atmega256rfr2/halUart.o
+                0x00001a5a                HAL_UartTaskHandler
+ .text.HAL_Init
+                0x00001ae8       0x22 ./stack/hal/atmega256rfr2/src/hal.o
+                0x00001ae8                HAL_Init
+ .text.HAL_Delay
+                0x00001b0a        0x6 ./stack/hal/atmega256rfr2/src/hal.o
+                0x00001b0a                HAL_Delay
+ .text.HAL_TimerInit
+                0x00001b10       0x2a ./stack/hal/atmega256rfr2/src/halTimer.o
+                0x00001b10                HAL_TimerInit
+ .text.HAL_TimerDelay
+                0x00001b3a       0x50 ./stack/hal/atmega256rfr2/src/halTimer.o
+                0x00001b3a                HAL_TimerDelay
+ .text.__vector_42
+                0x00001b8a       0x22 ./stack/hal/atmega256rfr2/src/halTimer.o
+                0x00001b8a                __vector_42
+ .text.baseNode_lowPower
+                0x00001bac       0x34 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001bac                baseNode_lowPower
+ .text.baseNode_sendDataCurrent
+                0x00001be0       0x58 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001be0                baseNode_sendDataCurrent
+ .text.baseNode_sendData
+                0x00001c38       0xa6 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001c38                baseNode_sendData
+ .text.baseNode_initDevice
+                0x00001cde       0x12 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001cde                baseNode_initDevice
+ .text.baseNode_initMessage
+                0x00001cf0      0x246 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001cf0                baseNode_initMessage
+ .text.baseNode_initNetwork
+                0x00001f36       0x5a ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001f36                baseNode_initNetwork
+ .text.baseNode_initDataSendingTimer
+                0x00001f90       0x44 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001f90                baseNode_initDataSendingTimer
+ .text.baseNode_initAgingTimer
+                0x00001fd4       0x28 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001fd4                baseNode_initAgingTimer
+ .text.baseNode_setAckByte
+                0x00001ffc       0x58 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00001ffc                baseNode_setAckByte
+ .text.onSend   0x00002054        0x2 ./stack/apps/BitStorm_LM/Coordinator.o
+ .text.onSendingDone
+                0x00002056        0x2 ./stack/apps/BitStorm_LM/Coordinator.o
+ .text.onInit   0x00002058       0x2a ./stack/apps/BitStorm_LM/Coordinator.o
+ .text.appDataInd
+                0x00002082       0xcc ./stack/apps/BitStorm_LM/Coordinator.o
+ .text.onSendingDone
+                0x0000214e        0x8 ./stack/apps/BitStorm_LM/EndDevice.o
+ .text.onWakeup
+                0x00002156       0x18 ./stack/apps/BitStorm_LM/EndDevice.o
+ .text.onSleep  0x0000216e       0xa0 ./stack/apps/BitStorm_LM/EndDevice.o
+ .text.onPrepareToSleep
+                0x0000220e       0x14 ./stack/apps/BitStorm_LM/EndDevice.o
+ .text.onSend   0x00002222       0x12 ./stack/apps/BitStorm_LM/EndDevice.o
+ .text.appDataConf
+                0x00002234       0x12 ./stack/apps/BitStorm_LM/EndDevice.o
+ .text.onInit   0x00002246       0x18 ./stack/apps/BitStorm_LM/EndDevice.o
+ .text.appDataSendingTimerHandler
+                0x0000225e       0x16 ./stack/apps/BitStorm_LM/Router.o
+ .text.routerAgingTimerHandler
+                0x00002274       0x2e ./stack/apps/BitStorm_LM/Router.o
+ .text.onSendingDone
+                0x000022a2       0x28 ./stack/apps/BitStorm_LM/Router.o
+ .text.appDataConf
+                0x000022ca       0x12 ./stack/apps/BitStorm_LM/Router.o
+ .text.onInit   0x000022dc       0x6e ./stack/apps/BitStorm_LM/Router.o
+ .text.onWaitSendTimer
+                0x0000234a       0x60 ./stack/apps/BitStorm_LM/Router.o
+ .text.onSend   0x000023aa      0x106 ./stack/apps/BitStorm_LM/Router.o
+ .text.AT_handle_le_packet
+                0x000024b0      0x306 ./stack/apps/BitStorm_LM/Router.o
+                0x000024b0                AT_handle_le_packet
+ .text.adc_meastemp
+                0x000027b6       0x2e ./stack/apps/BitStorm_LM/Sensor_ADC.o
+                0x000027b6                adc_meastemp
+ .text.adc_measevdd
+                0x000027e4       0x2e ./stack/apps/BitStorm_LM/Sensor_ADC.o
+                0x000027e4                adc_measevdd
+ .text.writeString
+                0x00002812       0x18 ./stack/apps/BitStorm_LM/at.o
+ .text.AT_writeHex
+                0x0000282a       0x28 ./stack/apps/BitStorm_LM/at.o
+                0x0000282a                AT_writeHex
+ .text.AT_parseNybble
+                0x00002852       0x24 ./stack/apps/BitStorm_LM/at.o
+                0x00002852                AT_parseNybble
+ .text.unlikely.setConfigParam
+                0x00002876       0xae ./stack/apps/BitStorm_LM/at.o
+ .text.AT_debugString
+                0x00002924        0xa ./stack/apps/BitStorm_LM/at.o
+                0x00002924                AT_debugString
+ .text.HAL_UartBytesReceived
+                0x0000292e      0x30e ./stack/apps/BitStorm_LM/at.o
+                0x0000292e                HAL_UartBytesReceived
+ .text.AT_init  0x00002c3c       0x26 ./stack/apps/BitStorm_LM/at.o
+                0x00002c3c                AT_init
+ .text.EEPROM_GetChar
+                0x00002c62       0x10 ./stack/apps/BitStorm_LM/eeprom.o
+                0x00002c62                EEPROM_GetChar
+ .text.EEPROM_PutChar
+                0x00002c72       0x38 ./stack/apps/BitStorm_LM/eeprom.o
+                0x00002c72                EEPROM_PutChar
+ .text.write_config
+                0x00002caa       0x2e ./stack/apps/BitStorm_LM/main.o
+                0x00002caa                write_config
+ .text.startup.main
+                0x00002cd8       0xce ./stack/apps/BitStorm_LM/main.o
+                0x00002cd8                main
+ .text.libgcc.mul
+                0x00002da6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x00002da6       0x44 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+                0x00002da6                __udivmodsi4
+ .text.libgcc   0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .text.libgcc   0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00002dea        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00002dea       0x1e /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+                0x00002dea                __umulhisi3
+ .text.libgcc.div
+                0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .text.libgcc.mul
+                0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .text.libgcc.div
+                0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .text.libgcc   0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .text.libgcc.prologue
+                0x00002e08        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .text.libgcc.builtins
+                0x00002e08       0x32 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+                0x00002e08                __ashldi3
+ .text.libgcc.fmul
+                0x00002e3a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .text.libgcc.fixed
+                0x00002e3a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .text.libgcc.mul
+                0x00002e3a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .text.libgcc.div
+                0x00002e3a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .text.libgcc   0x00002e3a       0x12 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+                0x00002e3a                __cmpdi2
+ .text.libgcc.prologue
+                0x00002e4c        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .text.libgcc.builtins
+                0x00002e4c        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .text.libgcc.fmul
+                0x00002e4c        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .text.libgcc.fixed
+                0x00002e4c        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .text.avr-libc
+                0x00002e4c       0xb8 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o)
+                0x00002ee2                rand_r
+                0x00002ee6                rand
+                0x00002eee                srand
+ .text.avr-libc
+                0x00002f04       0x12 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(memcpy.o)
+                0x00002f04                memcpy
+ .text.libgcc.mul
+                0x00002f16        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .text.libgcc.div
+                0x00002f16       0x2e /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+                0x00002f16                __divmodsi4
+ .text.libgcc   0x00002f44        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .text.libgcc.prologue
+                0x00002f44        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .text.libgcc.builtins
+                0x00002f44        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fmul
+                0x00002f44        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .text.libgcc.fixed
+                0x00002f44        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .text.libgcc.mul
+                0x00002f44        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .text.libgcc.div
+                0x00002f44       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+                0x00002f44                __negsi2
+ .text.libgcc   0x00002f54        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .text.libgcc.prologue
+                0x00002f54        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .text.libgcc.builtins
+                0x00002f54        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .text.libgcc.fmul
+                0x00002f54        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .text.libgcc.fixed
+                0x00002f54        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .text.libgcc.mul
+                0x00002f54       0x16 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+                0x00002f54                __muluhisi3
+ .text.libgcc.div
+                0x00002f6a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x00002f6a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x00002f6a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x00002f6a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x00002f6a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x00002f6a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x00002f6a       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+                0x00002f6a                __mulshisi3
+                0x00002f70                __mulohisi3
+ .text.libgcc.div
+                0x00002f7a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+ .text.libgcc   0x00002f7a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+ .text.libgcc.prologue
+                0x00002f7a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+ .text.libgcc.builtins
+                0x00002f7a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+ .text.libgcc.fmul
+                0x00002f7a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+ .text.libgcc.fixed
+                0x00002f7a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+                0x00002f7a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002f7a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+                0x00002f7a                exit
+                0x00002f7a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002f7a        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002f7e                _etext = .
+
+.data           0x00800200       0xa2 load address 0x00002f7e
+                0x00800200                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800200        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o
+ .data          0x00800200        0x0 ./stack/sys/src/sys.o
+ .data          0x00800200        0x0 ./stack/sys/src/sysEncrypt.o
+ .data          0x00800200        0x0 ./stack/sys/src/sysTimer.o
+ .data          0x00800200        0x0 ./stack/phy/atmegarfr2/src/phy.o
+ .data          0x00800200        0x0 ./stack/phy/atmega256rfr2/src/phy.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwk.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwkDataReq.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwkFrame.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwkGroup.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwkRoute.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwkRouteDiscovery.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwkRx.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwkSecurity.o
+ .data          0x00800200        0x0 ./stack/nwk/src/nwkTx.o
+ .data          0x00800200        0x0 ./stack/hal/drivers/atmega256rfr2/halSleep.o
+ .data          0x00800200        0x0 ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .data          0x00800200        0x0 ./stack/hal/atmega256rfr2/src/hal.o
+ .data          0x00800200        0x0 ./stack/hal/atmega256rfr2/src/halTimer.o
+ .data          0x00800200        0x0 ./stack/apps/BitStorm_LM/BaseNode.o
+ .data          0x00800200        0x0 ./stack/apps/BitStorm_LM/Coordinator.o
+ .data          0x00800200        0x0 ./stack/apps/BitStorm_LM/EndDevice.o
+ .data          0x00800200        0x0 ./stack/apps/BitStorm_LM/Router.o
+ .data          0x00800200        0x0 ./stack/apps/BitStorm_LM/Sensor_ADC.o
+ .data          0x00800200        0x0 ./stack/apps/BitStorm_LM/at.o
+ .data          0x00800200        0x0 ./stack/apps/BitStorm_LM/eeprom.o
+ .data          0x00800200        0x0 ./stack/apps/BitStorm_LM/main.o
+ .data          0x00800200        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .data          0x00800200        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .data          0x00800200        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .data          0x00800200        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .data          0x00800200        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .data          0x00800200        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .data          0x00800200        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .data          0x00800200        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o)
+ .data          0x00800204        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(memcpy.o)
+ .data          0x00800204        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .data          0x00800204        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .data          0x00800204        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .data          0x00800204        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+ *(.data*)
+ .data.eventsCoordinator
+                0x00800204       0x10 ./stack/apps/BitStorm_LM/Coordinator.o
+                0x00800204                eventsCoordinator
+ .data.eventsEndDevice
+                0x00800214       0x10 ./stack/apps/BitStorm_LM/EndDevice.o
+                0x00800214                eventsEndDevice
+ .data.eventsRouter
+                0x00800224       0x10 ./stack/apps/BitStorm_LM/Router.o
+                0x00800224                eventsRouter
+ .data.HEX_DIGITS
+                0x00800234       0x11 ./stack/apps/BitStorm_LM/at.o
+                0x00800234                HEX_DIGITS
+ *(.rodata)
+ .rodata        0x00800245        0x9 ./stack/nwk/src/nwk.o
+ *(.rodata*)
+ .rodata.CSWTCH.3
+                0x0080024e        0x3 ./stack/nwk/src/nwkTx.o
+ .rodata.str1.1
+                0x00800251       0x3f ./stack/apps/BitStorm_LM/at.o
+ .rodata.str1.1
+                0x00800290       0x11 ./stack/apps/BitStorm_LM/main.o
+ *(.gnu.linkonce.d*)
+                0x008002a2                . = ALIGN (0x2)
+ *fill*         0x008002a1        0x1 
+                0x008002a2                _edata = .
+                0x008002a2                PROVIDE (__data_end, .)
+
+.bss            0x008002a2      0xf28
+                0x008002a2                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/crtm256rfr2.o
+ .bss           0x008002a2        0x0 ./stack/sys/src/sys.o
+ .bss           0x008002a2        0x0 ./stack/sys/src/sysEncrypt.o
+ .bss           0x008002a2        0x0 ./stack/sys/src/sysTimer.o
+ .bss           0x008002a2        0x0 ./stack/phy/atmegarfr2/src/phy.o
+ .bss           0x008002a2        0x0 ./stack/phy/atmega256rfr2/src/phy.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwk.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwkDataReq.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwkFrame.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwkGroup.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwkRoute.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwkRouteDiscovery.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwkRx.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwkSecurity.o
+ .bss           0x008002a2        0x0 ./stack/nwk/src/nwkTx.o
+ .bss           0x008002a2        0x0 ./stack/hal/drivers/atmega256rfr2/halSleep.o
+ .bss           0x008002a2        0x0 ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .bss           0x008002a2        0x0 ./stack/hal/atmega256rfr2/src/hal.o
+ .bss           0x008002a2        0x0 ./stack/hal/atmega256rfr2/src/halTimer.o
+ .bss           0x008002a2        0x0 ./stack/apps/BitStorm_LM/BaseNode.o
+ .bss           0x008002a2        0x0 ./stack/apps/BitStorm_LM/Coordinator.o
+ .bss           0x008002a2        0x0 ./stack/apps/BitStorm_LM/EndDevice.o
+ .bss           0x008002a2        0x0 ./stack/apps/BitStorm_LM/Router.o
+ .bss           0x008002a2        0x0 ./stack/apps/BitStorm_LM/Sensor_ADC.o
+ .bss           0x008002a2        0x0 ./stack/apps/BitStorm_LM/at.o
+ .bss           0x008002a2        0x0 ./stack/apps/BitStorm_LM/eeprom.o
+ .bss           0x008002a2        0x0 ./stack/apps/BitStorm_LM/main.o
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(memcpy.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .bss           0x008002a2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+ *(.bss*)
+ .bss.timers    0x008002a2        0x2 ./stack/sys/src/sysTimer.o
+ .bss.phyBand   0x008002a4        0x1 ./stack/phy/atmegarfr2/src/phy.o
+ .bss.phyChannel
+                0x008002a5        0x1 ./stack/phy/atmegarfr2/src/phy.o
+ .bss.phyRxState
+                0x008002a6        0x1 ./stack/phy/atmegarfr2/src/phy.o
+ .bss.phyRxBuffer
+                0x008002a7       0x80 ./stack/phy/atmegarfr2/src/phy.o
+ .bss.phyState  0x00800327        0x1 ./stack/phy/atmegarfr2/src/phy.o
+ .bss.nwkDataReqQueue
+                0x00800328        0x2 ./stack/nwk/src/nwkDataReq.o
+ .bss.nwkFrameFrames
+                0x0080032a      0x55a ./stack/nwk/src/nwkFrame.o
+ .bss.nwkRouteTable
+                0x00800884      0x2bc ./stack/nwk/src/nwkRoute.o
+ .bss.nwkRxDuplicateRejectionTimer
+                0x00800b40        0xd ./stack/nwk/src/nwkRx.o
+ .bss.nwkRxAckControl
+                0x00800b4d        0x1 ./stack/nwk/src/nwkRx.o
+ .bss.nwkRxDuplicateRejectionTable
+                0x00800b4e       0xfa ./stack/nwk/src/nwkRx.o
+ .bss.nwkTxDelayTimer
+                0x00800c48        0xd ./stack/nwk/src/nwkTx.o
+ .bss.nwkTxAckWaitTimer
+                0x00800c55        0xd ./stack/nwk/src/nwkTx.o
+ .bss.nwkTxPhyActiveFrame
+                0x00800c62        0x2 ./stack/nwk/src/nwkTx.o
+ .bss.halSleepTimerEvent
+                0x00800c64        0x1 ./stack/hal/drivers/atmega256rfr2/halSleep.o
+ .bss.newData   0x00800c65        0x1 ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .bss.udrEmpty  0x00800c66        0x1 ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .bss.rxData    0x00800c67        0x2 ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .bss.rxFifo    0x00800c69        0xa ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .bss.txData    0x00800c73       0x65 ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .bss.txFifo    0x00800cd8        0xa ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .bss.mac_short
+                0x00800ce2        0x2 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00800ce2                mac_short
+ .bss.send_router_report
+                0x00800ce4        0x1 ./stack/apps/BitStorm_LM/Router.o
+ .bss.slot_to_send
+                0x00800ce5        0x2 ./stack/apps/BitStorm_LM/Router.o
+ .bss.at_index  0x00800ce7        0x1 ./stack/apps/BitStorm_LM/at.o
+                0x00800ce7                at_index
+ .bss.send_messages_paused
+                0x00800ce8        0x1 ./stack/apps/BitStorm_LM/main.o
+                0x00800ce8                send_messages_paused
+ .bss.appState  0x00800ce9        0x1 ./stack/apps/BitStorm_LM/main.o
+                0x00800ce9                appState
+ .bss.currentAppStateEvents
+                0x00800cea        0x2 ./stack/apps/BitStorm_LM/main.o
+                0x00800cea                currentAppStateEvents
+ *(COMMON)
+ COMMON         0x00800cec       0x28 ./stack/nwk/src/nwk.o
+                0x00800cec                nwkIb
+ COMMON         0x00800d14        0x1 ./stack/hal/atmega256rfr2/src/halTimer.o
+                0x00800d14                halTimerIrqCount
+ COMMON         0x00800d15       0x50 ./stack/apps/BitStorm_LM/BaseNode.o
+                0x00800d15                appDataSendingTimer
+                0x00800d22                routerAgingTimer
+                0x00800d2f                nwkDataReq
+                0x00800d40                appMsg
+ COMMON         0x00800d65       0x2d ./stack/apps/BitStorm_LM/Coordinator.o
+                0x00800d65                cobs_buffer
+ COMMON         0x00800d92      0x320 ./stack/apps/BitStorm_LM/Router.o
+                0x00800d92                router_id_list
+ COMMON         0x008010b2      0x101 ./stack/apps/BitStorm_LM/at.o
+                0x008010b2                at_buffer
+ COMMON         0x008011b3       0x17 ./stack/apps/BitStorm_LM/main.o
+                0x008011b3                AppConfig
+                0x008011ca                PROVIDE (__bss_end, .)
+                0x00002f7e                __data_load_start = LOADADDR (.data)
+                0x00003020                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008011ca        0x0
+                0x008011ca                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008011ca                PROVIDE (__noinit_end, .)
+                0x008011ca                _end = .
+                0x008011ca                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 ./stack/sys/src/sys.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 ./stack/sys/src/sysEncrypt.o
+ .comment       0x00000000       0x12 ./stack/sys/src/sysTimer.o
+ .comment       0x00000000       0x12 ./stack/phy/atmegarfr2/src/phy.o
+ .comment       0x00000000       0x12 ./stack/phy/atmega256rfr2/src/phy.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwk.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwkDataReq.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwkFrame.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwkGroup.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwkRoute.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwkRouteDiscovery.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwkRx.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwkSecurity.o
+ .comment       0x00000000       0x12 ./stack/nwk/src/nwkTx.o
+ .comment       0x00000000       0x12 ./stack/hal/drivers/atmega256rfr2/halSleep.o
+ .comment       0x00000000       0x12 ./stack/hal/drivers/atmega256rfr2/halUart.o
+ .comment       0x00000000       0x12 ./stack/hal/atmega256rfr2/src/hal.o
+ .comment       0x00000000       0x12 ./stack/hal/atmega256rfr2/src/halTimer.o
+ .comment       0x00000000       0x12 ./stack/apps/BitStorm_LM/BaseNode.o
+ .comment       0x00000000       0x12 ./stack/apps/BitStorm_LM/Coordinator.o
+ .comment       0x00000000       0x12 ./stack/apps/BitStorm_LM/EndDevice.o
+ .comment       0x00000000       0x12 ./stack/apps/BitStorm_LM/Router.o
+ .comment       0x00000000       0x12 ./stack/apps/BitStorm_LM/Sensor_ADC.o
+ .comment       0x00000000       0x12 ./stack/apps/BitStorm_LM/at.o
+ .comment       0x00000000       0x12 ./stack/apps/BitStorm_LM/eeprom.o
+ .comment       0x00000000       0x12 ./stack/apps/BitStorm_LM/main.o
+ .comment       0x00000000       0x12 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr6/libc.a(rand.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x160
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x00000020       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000040       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x00000060       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x00000080       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .debug_aranges
+                0x000000a0       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .debug_aranges
+                0x000000c0       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .debug_aranges
+                0x000000e0       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .debug_aranges
+                0x00000100       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .debug_aranges
+                0x00000120       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .debug_aranges
+                0x00000140       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x82a
+ *(.debug_info)
+ .debug_info    0x00000000       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .debug_info    0x000000be       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .debug_info    0x0000017c       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .debug_info    0x0000023a       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .debug_info    0x000002f8       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .debug_info    0x000003b6       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .debug_info    0x00000474       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .debug_info    0x00000532       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .debug_info    0x000005f0       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .debug_info    0x000006ae       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .debug_info    0x0000076c       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000       0xdc
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x00000014       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .debug_abbrev  0x00000028       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .debug_abbrev  0x0000003c       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x00000050       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .debug_abbrev  0x00000064       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .debug_abbrev  0x00000078       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .debug_abbrev  0x0000008c       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .debug_abbrev  0x000000a0       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .debug_abbrev  0x000000b4       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .debug_abbrev  0x000000c8       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+
+.debug_line     0x00000000      0x43c
+ *(.debug_line)
+ .debug_line    0x00000000       0x78 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_udivmodsi4.o)
+ .debug_line    0x00000078       0x58 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_exit.o)
+ .debug_line    0x000000d0       0x63 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_copy_data.o)
+ .debug_line    0x00000133       0x5e /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_clear_bss.o)
+ .debug_line    0x00000191       0x65 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_umulhisi3.o)
+ .debug_line    0x000001f6       0x6f /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_ashldi3.o)
+ .debug_line    0x00000265       0x59 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_cmpdi2.o)
+ .debug_line    0x000002be       0x6a /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_divmodsi4.o)
+ .debug_line    0x00000328       0x58 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_negsi2.o)
+ .debug_line    0x00000380       0x60 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_muluhisi3.o)
+ .debug_line    0x000003e0       0x5c /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr6/libgcc.a(_mulshisi3.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(spike_bitstorm_rfr2.elf elf32-avr)
+LOAD linker stubs
